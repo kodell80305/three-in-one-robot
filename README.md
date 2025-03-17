@@ -20,21 +20,20 @@ The center gear could be used to drive a SCARA arm, a radial arm, or the third p
 ##
 One of the reasons I wanted to do this one is that I built the robot from Matt G at https://alwaystinkering.com/2021/03/12/setting-up-and-configuring-the-sandbot/.   At the time, I 
 lacked the 3d modeling skills and the 3d printing skills to do a satisfying job, so I've been meaning revist this at come up with an improved design.   There were a couple of 
-issues I wanted to overcome.   The arm had too much play in and tended to drop.  It was also difficult to get everything adjusted correctly for the belts.   I'm intending to address these
-issues with the design below:
+issues I wanted to overcome.   The arm had too much play in and tended to drop.  It was also difficult to get everything adjusted correctly for the belts.   I'm intending to address these issues with the design below:
 
 ![image](https://github.com/user-attachments/assets/7c24c6e4-ea0a-4da1-af87-2058fd109eb3)
 
-The 5 mm carbon fiber rods are incredibly strong - the end mechanism is a belt tensioning mechanism that slides along the carbon fiber rods and holds the outer arm.   I'll put a 
+The inner arm is made of up two 5 mm carbon fiber rods (about $9 for a pack of 5 on [Amazon](https://www.amazon.com/MECCANIXITY-Carbon-Fiber-300mm-Quadcopter/dp/B0CTTBSBNN/ref=sr_1_3?crid=23AJ794M031PM&dib=eyJ2IjoiMSJ9.MJMeH6QCTyoHL-ZEP7HK383_D5m7PvBB6umXPj412T82ivodgDwwibtP-o99J82awkXbBVNg6YtYdp0IcY5KSYMnMyv4WD5BTGDfNwqVEZvL3AO2EfehHA3-aUxMxHUbDV3WPDU3brXmNrpYyupg3zEqk20EA3a1WjvzvC-7nav0SX84Rhcg9OvzAG8pIeWm___IUwbI6N8TGsc19B4hIliI1wySKjRjpnN3WFXdPponAJsvwQeWk-QBfgMZVEMf01K42pAfz6SMQs4IGNKMBMFHWvP3rgJJXHq7G8xhCwtAwYNUt0BJbvU_Rj2J92nrpFCMhCWAHMo44yrs9E4OWFgAjeFTK5GGM2dhwCLgc0U.uLn67MjOrLTEv2xcwRVmrgF7J6BWl-cumq0-pPBESwc&dib_tag=se&keywords=5%2Bmm%2Bcarbon%2Bfiber%2Brod&qid=1742215634&s=industrial&sprefix=5%2Bmm%2Bcarbon%2Bfiber%2Brod%2Cindustrial%2C140&sr=1-3&th=1)   I'll add the attachments to the main gear, a end cap to hold the rods together and an adjustable/sliding mechanism to hold the elbow gear and keep the belt snug.  Pretty simple!
+
+The 5 mm carbon fiber rods are incredibly strong.   The trick to getting the sandtable robots working well seems to keep the arm as stiff as possible and provide a cylinder for the magnets that they can freely float up and down (while keeping the cylinder as perpendicular to the table surface as possible.  I think I can do all that with this design.
+
+I'll put a 
 length adjustment for the position of the magnet on the outer arm so that the magnet can be in the exact center after homing (I'll include the rotational homing as part of the 
-base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty straightforward to come up with the SCARA design
+base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty easy to come up with the SCARA design.  
 
 ## 
-The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the [Dune Weaver project] (https://github.com/tuanchris/dune-weaver).
-
-![image](https://github.com/user-attachments/assets/9a00e299-d5dc-4667-90a2-b11da11c8dfb)
-
-is just a matter of attaching the radial arm.   I would use the Dune Weaver software ... which is pretty great to control the robots.   I think Tuan has come up with the right approach by using off-the-shelf hardware and software for the stepper control (Fluidnc running on the mksdlc32) and then using a Raspberry Pi Zero 2w with code written in python for the user interface.  Both Tuan/Dune Weaver and Fluidnc deserver your (and my!) support.
+The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the [Dune Weaver project] (https://github.com/tuanchris/dune-weaver) is just a matter of attaching the radial arm.   I would use the Dune Weaver software ... which is pretty great to control the robots.   I think Tuan has come up with the right approach by using off-the-shelf hardware and software for the stepper control (Fluidnc running on the mksdlc32) and then using a Raspberry Pi Zero 2w with code written in python for the user interface.  Both Tuan/Dune Weaver and Fluidnc deserver your (and my!) support.
 ##
 The third design I wanted to explore is a string art machine.   My son wrote a program to transform images to string art, and I've been meaning to implement it.   I wanted to explore 3d printing the "pins".
 
