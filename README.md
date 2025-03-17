@@ -30,11 +30,11 @@ length adjustment for the position of the magnet on the outer arm so that the ma
 base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty straightforward to come up with the SCARA design
 
 ## 
-The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the 
+The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the [Dune Weaver project] (https://github.com/tuanchris/dune-weaver).
 
 ![image](https://github.com/user-attachments/assets/9a00e299-d5dc-4667-90a2-b11da11c8dfb)
 
-is just a matter of attaching the radial arm.
+is just a matter of attaching the radial arm.   I would use the Dune Weaver software ... which is pretty great to control the robots.   I think Tuan has come up with the right approach by using off-the-shelf hardware and software for the stepper control (Fluidnc running on the mksdlc32) and then using a Raspberry Pi Zero 2w with code written in python for the user interface.  Both Tuan/Dune Weaver and Fluidnc deserver your (and my!) support.
 ##
 The third design I wanted to explore is a string art machine.   My son wrote a program to transform images to string art, and I've been meaning to implement it.   I wanted to explore 3d printing the "pins".
 
