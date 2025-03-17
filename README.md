@@ -40,4 +40,7 @@ The third design I wanted to explore is a string art machine.   My son wrote a p
 
 ##
 There's a fourth design I've been thinking about.  Both the SCARA and radial arm robot need to make adjustments on the radial/elbow motor - basically they need to turn their gears at the same speed/direction as the main gear is moving in order to stay still.   This is easily done in software - but if you were a victorian steampunk engineer and wanted a purely mechanical solution to this issue, the solution would be to use a differential (one "wheel" gets driven at the speed the main gear is turning, the other acts like there's no coupling between the two.   You then use the "drive shaft" to control the SCARA arm or radial arm).   I've gotten as far as looking into RC model car differentials.   It's a pretty insane, convulated way to do things, but who wouldn't want a robot with a differential?
+##
+![image](https://github.com/user-attachments/assets/722deff9-4102-434f-8175-697cf08c401c)
+
 
