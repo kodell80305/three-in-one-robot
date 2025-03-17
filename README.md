@@ -21,11 +21,19 @@ issues with the design below:
 
 ![image](https://github.com/user-attachments/assets/7c24c6e4-ea0a-4da1-af87-2058fd109eb3)
 
-The 5 mm carbon fiber rods are incredibly strong - the end mechanism is a belt tensionion mechanism that slides along the carbon fiber rods and holds the outer arm.   I'll put a 
+The 5 mm carbon fiber rods are incredibly strong - the end mechanism is a belt tensioning mechanism that slides along the carbon fiber rods and holds the outer arm.   I'll put a 
 length adjustment for the position of the magnet on the outer arm so that the magnet can be in the exact center after homing (I'll include the rotational homing as part of the 
-base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height show is for the smallest NEMA 17 motor I saw on Amazon.  
-##
-So to develop the SCARA robot, you'll start with the base platform and decide what to put on top of it.
+base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty straightforward to come up with the SCARA design
 
 ## 
-The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.
+The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the 
+
+![image](https://github.com/user-attachments/assets/9a00e299-d5dc-4667-90a2-b11da11c8dfb)
+
+is just a matter of attaching the radial arm.
+##
+The third design I wanted to explore is a string art machine.   My son wrote a program to transform images to string art, and I've been meaning to implement it.   I wanted to explore 3d printing the "pins".
+
+##
+There's a fourth design I've been thinking about.  Both the SCARA and radial arm robot need to make adjustments on the radial/elbow motor - basically they need to turn their gears at the same speed/direction as the main gear is moving in order to stay still.   This is easily done in software - but if you were a victorian steampunk engineer and wanted a purely mechanical solution to this issue, the solution would be to use a differential (one "wheel" gets driven at the speed the main gear is turning, the other acts like there's no coupling between the two.   You then use the "drive shaft" to control the SCARA arm or radial arm.   It's a pretty insane, convulated way to do things, but who wouldn't want a robot with a differential.
+
