@@ -13,11 +13,21 @@ shouldn't be a problem for the model, but quickly gets out of the range of my pr
  ![image](https://github.com/user-attachments/assets/7151c1f4-726e-4994-b89f-1011a3320ff9)
 
  So rather that redo everything up to the rotational platform everytime, I'll create a base platform as a component.
+
  
- The basic platform mock-up looks like
+The center gear could be used to drive a SCARA arm, a radial arm, and the third project I have in mind is a string art project
 
+ ## V.1 Update
 
-The center gear could be used to drive a SCARA arm, a radial arm, and the third project I have in mind is a string art project.  
+ It's pretty clear that updating gears is going to be a major stumbling block.   Since the gear generation tool is a pluging, there is no way to truely parameterize gear generation - I can see that traditionally gears were something you got from a catalog, but in an age of 3d printing it would be nice to have this truely integrated.
+
+ (I can't really complain when I'm using a pretty nifty tool provided to me for free)
+ 
+![Screenshot 2025-03-18 085822](https://github.com/user-attachments/assets/10ecae43-aa26-4886-a2fa-5493d855afce)
+
+Still, it was nice to see the motors update from what shown above (which I'll use one of for the string art project) to the onces I'm currently using on the polar robot.  These are 38 mm long 42 Ncm motors.
+
+.  
 
 
 
