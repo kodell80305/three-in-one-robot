@@ -14,7 +14,7 @@ shouldn't be a problem for the model, but quickly gets out of the range of my pr
  The basic platform mock-up looks like
 
 
-The center gear could be used to drive a SCARA arm, a radial arm, or the third project I have in mind is a string art project.
+The center gear could be used to drive a SCARA arm, a radial arm, and the third project I have in mind is a string art project.  
 ![image](https://github.com/user-attachments/assets/87883334-30a8-41c0-b6ee-92d0d5f486bd)
 
 
