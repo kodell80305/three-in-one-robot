@@ -49,7 +49,7 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
 
 
 ##
-One of the reasons I wanted to do this one is that I built the robot from Matt G at https://alwaystinkering.com/2021/03/12/setting-up-and-configuring-the-sandbot/.   At the time, I 
+One of the reasons I wanted to do this one is that I built the robot from (Matt G )[https://alwaystinkering.com/category/sand-table/].   At the time, I 
 lacked the 3d modeling skills and the 3d printing skills to do a satisfying job, so I've been meaning revist this at come up with an improved design.   There were a couple of 
 issues I wanted to overcome.   The arm had too much play in and tended to drop.  It was also difficult to get everything adjusted correctly for the belts.   I'm intending to address these issues with the design below:
 
