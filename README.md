@@ -25,7 +25,18 @@ The center gear could be used to drive a SCARA arm, a radial arm, and the third 
  
 ![Screenshot 2025-03-18 085822](https://github.com/user-attachments/assets/10ecae43-aa26-4886-a2fa-5493d855afce)
 
-Still, it was nice to see the motors update from what shown above (which I'll use one of for the string art project) to the onces I'm currently using on the polar robot.  These are 38 mm long 42 Ncm motors.
+Still, it was nice to see the motors update from what shown above (which I'll use one of for the string art project) to the onces I'm currently using on the polar robot.
+These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.  So a couple of things I want to keep in mind.
+
+*1. Central gear is going to be different for the different cases 
+ *Similar to the rotary gear for the polar robot (but I should switch to the 30 tooth gear used in the Dune Weaver project to be as compatible as possible)
+ *A GT2 gear for the SCARA robot
+ *Non-existant for the string art case.
+*2. Use heat inserts as much as possible.  The combination of the USB C soldering iron and heat insert really helps everything.
+*3. Decide how to handle the different ways the main gear is going to be used.  
+ *Polar robot needs the radial arm supported across the center (and obviously needs to move!)
+ *SCARA doesn't need anything other than rigid carbon fiber rods attached to the platform, these can be on perimeter.
+ *String art likewise can have the frame on the perimeter (I'll use foam board as the backing for a frame printed in 4 parts and secured to the gear this gives me a diameter of roughly 500 mm with the 256 mm x 256 mm print bed of the X1C).
 
 .  
 
