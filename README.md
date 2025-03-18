@@ -15,6 +15,8 @@ shouldn't be a problem for the model, but quickly gets out of the range of my pr
 
 
 The center gear could be used to drive a SCARA arm, a radial arm, or the third project I have in mind is a string art project.
+![image](https://github.com/user-attachments/assets/87883334-30a8-41c0-b6ee-92d0d5f486bd)
+
 ![Screenshot 2025-03-17 030009](https://github.com/user-attachments/assets/b0413ac4-e037-4e04-8d18-cb22f687676a)
 
 ##
@@ -22,7 +24,6 @@ One of the reasons I wanted to do this one is that I built the robot from Matt G
 lacked the 3d modeling skills and the 3d printing skills to do a satisfying job, so I've been meaning revist this at come up with an improved design.   There were a couple of 
 issues I wanted to overcome.   The arm had too much play in and tended to drop.  It was also difficult to get everything adjusted correctly for the belts.   I'm intending to address these issues with the design below:
 
-![image](https://github.com/user-attachments/assets/7c24c6e4-ea0a-4da1-af87-2058fd109eb3)
 
 The inner arm is made of up two 5 mm carbon fiber rods (about $9 for a pack of 5 on [Amazon](https://www.amazon.com/MECCANIXITY-Carbon-Fiber-300mm-Quadcopter/dp/B0CTTBSBNN/ref=sr_1_3?crid=23AJ794M031PM&dib=eyJ2IjoiMSJ9.MJMeH6QCTyoHL-ZEP7HK383_D5m7PvBB6umXPj412T82ivodgDwwibtP-o99J82awkXbBVNg6YtYdp0IcY5KSYMnMyv4WD5BTGDfNwqVEZvL3AO2EfehHA3-aUxMxHUbDV3WPDU3brXmNrpYyupg3zEqk20EA3a1WjvzvC-7nav0SX84Rhcg9OvzAG8pIeWm___IUwbI6N8TGsc19B4hIliI1wySKjRjpnN3WFXdPponAJsvwQeWk-QBfgMZVEMf01K42pAfz6SMQs4IGNKMBMFHWvP3rgJJXHq7G8xhCwtAwYNUt0BJbvU_Rj2J92nrpFCMhCWAHMo44yrs9E4OWFgAjeFTK5GGM2dhwCLgc0U.uLn67MjOrLTEv2xcwRVmrgF7J6BWl-cumq0-pPBESwc&dib_tag=se&keywords=5%2Bmm%2Bcarbon%2Bfiber%2Brod&qid=1742215634&s=industrial&sprefix=5%2Bmm%2Bcarbon%2Bfiber%2Brod%2Cindustrial%2C140&sr=1-3&th=1)   I'll add the attachments to the main gear, a end cap to hold the rods together and an adjustable/sliding mechanism to hold the elbow gear and keep the belt snug.  Pretty simple!
 
