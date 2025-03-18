@@ -17,7 +17,6 @@ shouldn't be a problem for the model, but quickly gets out of the range of my pr
 The center gear could be used to drive a SCARA arm, a radial arm, or the third project I have in mind is a string art project.
 ![image](https://github.com/user-attachments/assets/87883334-30a8-41c0-b6ee-92d0d5f486bd)
 
-![Screenshot 2025-03-17 030009](https://github.com/user-attachments/assets/b0413ac4-e037-4e04-8d18-cb22f687676a)
 
 ##
 One of the reasons I wanted to do this one is that I built the robot from Matt G at https://alwaystinkering.com/2021/03/12/setting-up-and-configuring-the-sandbot/.   At the time, I 
