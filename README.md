@@ -1,6 +1,7 @@
 # three-in-one-robot
 
-This is part of my learning Fusion 360.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.
+This is part of my learning Fusion 360.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.
+
 
 ![image](https://github.com/user-attachments/assets/add00af6-0670-4807-8d02-b6caf074c01c)
 
@@ -41,10 +42,10 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
 * 5. Spend some time to model items that need to fit on the robot ... they can be used as cutting tools later.
 * 6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
 
-.  Including the base, this is the current version
+.  Including the base, Current version is shown at the top
 
 
-![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/03295b7b-5917-4c50-8d06-2172fdade4a4)
+
 
 
 
