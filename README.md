@@ -29,20 +29,24 @@ The center gear could be used to drive a SCARA arm, a radial arm, and the third 
 Still, it was nice to see the motors update from what shown above (which I'll use one of for the string art project) to the onces I'm currently using on the polar robot.
 These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.  So a couple of things I want to keep in mind.
 
-* 1. Central gear is going to be different for the different cases 
+1. Central gear is going to be different for the different cases 
   * Similar to the rotary gear for the polar robot (but I should switch to the 30 tooth gear used in the Dune Weaver project to be as compatible as possible)
   * A GT2 gear for the SCARA robot
   * Non-existant for the string art case.
-* 2. Use heat inserts as much as possible.  The combination of the USB C soldering iron and heat insert makes it incredibly quick to put these in.  This will simplify that I need to print the radial arm in two pieces.  I'll join them with a top plate, secured with M3 screws/heat inserts , since they'll be mostly supported by the carbon fiber rods.
-* 3. Decide how to handle the different ways the main gear is going to be used.  
+  * 
+2. Use heat inserts as much as possible.  The combination of the USB C soldering iron and heat insert makes it incredibly quick to put these in.  This will simplify that I need to print the radial arm in two pieces.  I'll join them with a top plate, secured with M3 screws/heat inserts , since they'll be mostly supported by the carbon fiber rods.
+
+3. Decide how to handle the different ways the main gear is going to be used.  
   * Polar robot needs the radial arm supported across the center (and obviously needs to move!)
   * SCARA doesn't need anything other than rigid carbon fiber rods attached to the platform, these can be on perimeter.
   * String art likewise can have the frame on the perimeter (I'll use foam board as the backing for a frame printed in 4 parts and secured to the gear this gives me a diameter of roughly 500 mm with the 256 mm x 256 mm print bed of the X1C).
-* 4. My previous robots used a circular base (200 mm) using 4 5/8 threaded steel rods - for tramming, height adjustment.   I'll design the base around this - not that it's a universal standard, but I've already got the holes drilled.
-* 5. Spend some time to model items that need to fit on the robot ... they can be used as cutting tools later.
-* 6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
+4. My previous robots used a circular base (200 mm) using 4 5/8 threaded steel rods - for tramming, height adjustment.   I'll design the base around this - not that it's a universal standard, but I've already got the holes drilled.
 
-.  Including the base, Current version is shown at the top
+5. Spend some time to model items that need to fit on the robot ... they can be used as cutting tools later.
+
+6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
+
+Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate.
 
 
 
