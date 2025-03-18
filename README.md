@@ -39,6 +39,7 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
  *String art likewise can have the frame on the perimeter (I'll use foam board as the backing for a frame printed in 4 parts and secured to the gear this gives me a diameter of roughly 500 mm with the 256 mm x 256 mm print bed of the X1C).
 *4. My previous robots used a circular base (200 mm) using 4 5/8 threaded steel rods - for tramming, height adjustment.   I'll design the base around this - not that it's a universal standard, but I've already got the holes drilled.
 *5. Spend some time to model items that need to fit on the robot ... they can be used as cutting tools later.
+#6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
 
 .  
 
