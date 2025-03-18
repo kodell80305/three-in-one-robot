@@ -1,6 +1,6 @@
 # three-in-one-robot
 
-This is part of my learning Fusion 360.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.
+I'm mostly doing this as an exercise to improve my 3d modeling skils.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.
 
 ![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/6667d86c-5a57-4203-88a5-3525c1b6c738)
 
@@ -33,8 +33,7 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
   * Similar to the rotary gear for the polar robot (but I should switch to the 30 tooth gear used in the Dune Weaver project to be as compatible as possible)
   * A GT2 gear for the SCARA robot
   * Non-existant for the string art case.
-  * 
-2. Use heat inserts as much as possible.  The combination of the USB C soldering iron and heat insert makes it incredibly quick to put these in.  This will simplify that I need to print the radial arm in two pieces.  I'll join them with a top plate, secured with M3 screws/heat inserts , since they'll be mostly supported by the carbon fiber rods.
+2. Use heat inserts as much as possible.  Thecombination of the USB C soldering iron and heat insert makes it incredibly quick to put these in.  This will simplify that I need to print the radial arm in two pieces.  I'll join them with a top plate, secured with M3 screws/heat inserts , since they'll be mostly supported by the carbon fiber rods.   I've found that heated inserts solve problems I didn't know I had ... e.g. to join three things together usually takes one long screw.  With the heated insert you use a short screw,quick to remove and either end can be taken off indpendently (my current design is extremely hard to get the plates holding the arm off, as it screws from underneath and that area is not accessible without taking everything apart).
 
 3. Decide how to handle the different ways the main gear is going to be used.  
   * Polar robot needs the radial arm supported across the center (and obviously needs to move!)
@@ -46,7 +45,7 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
 
 6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
 
-Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate.
+Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate (barely).    I still need to add the mounts for the optical/hall effect sensors.  The rotary sensor is common to both. In the base I've added the 15 tooth gear (allows the slot on the radial arm to be narrower).
 
 
 
