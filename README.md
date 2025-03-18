@@ -2,8 +2,8 @@
 
 This is part of my learning Fusion 360.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.
 
+![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/6667d86c-5a57-4203-88a5-3525c1b6c738)
 
-![image](https://github.com/user-attachments/assets/add00af6-0670-4807-8d02-b6caf074c01c)
 
 
 I have several projects that require a rotational platform.   The basic design is to use an aluminum lazy susan and a large main gear with an exterior rotary motor.   Lazy susans make
