@@ -1,10 +1,14 @@
 # three-in-one-robot
 
-I'm mostly doing this as an exercise to improve my 3d modeling skils.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.
+I'm mostly doing this as an exercise to improve my 3d modeling skils.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.   This one uses a 6 inch lazy susan, 23 mm pancake stepper motors and the motor shafts cut down as much as possible.
+
+![Screenshot 2025-03-19 143729](https://github.com/user-attachments/assets/45b9fb46-51ea-482a-8214-f8abd84f57f3)
+
+The second one is more traditional with an 8 in lazy susan, 38 mm motors.
 
 ![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/6667d86c-5a57-4203-88a5-3525c1b6c738)
 
-
+I'll use the first to build a Dune Weaver Ombonod style robot with the radial arm the same length/gear modulus,  gear ratio of the rotational.    It should be fully software compatible.  I haven't yet down the rotational/radial sensors in the basic platform, but the Ombonod doesn't use these anyway.  I used a 6 inch lazy susan for the "Polar Sandtable" robot and was able to fit a Hall effect radial/optical rotational sensor in, so I'll pull that design in.   
 
 I have several projects that require a rotational platform.   The basic design is to use an aluminum lazy susan and a large main gear with an exterior rotary motor.   Lazy susans make
 a very inexpensive and stable platform.   The design will use 3d printed gears, so the only cost in the basic platform is the stepper motor, lazy susan and filament.  By paramaterizing 
