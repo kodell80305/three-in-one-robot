@@ -93,7 +93,7 @@ Parameter Settings:
 
 Gear goes from the 150 tooth to 240 tooth version.  Rotary gear at 24 teeth to keep gear ratio unchanged
 MainGearPitchDiameter: 240
-RotaryPitchDiameter:
+RotaryPitchDiameter: 24
 
 LazySusanOuterHole: 189
 LazySusanInnerHole: 157
@@ -115,12 +115,68 @@ Before I start printing I need:
 1. Optical mount attachment points
 2. Add additional attachment points on base (e.g. for centering within Ombonad space
 
-My Ombonad table has a inner radius of 396 mm, magnet, arm takes at least an additonal 20 m, so we are down to 380.  I think 350 should be okay.  I'll use 350 which means an arm length of 87
+My Ombonad table has a inner radius of 396 mm, magnet, arm takes at least an additonal 20 m, so we are down to 380.  I think 350 should be okay.  I'll use 350 which means an arm length of 87. This is a little awkward, as this is right at the edge of the lazy susan midpoint. .   Since I need the optical sensor underneeth, I need a shaft through the main gear for the elbow gear.  There is an exclusion zone from 72.5 to 100 (plus and minus room for the shaft and clearance.   There is also an excusion zone for clearance around the outer stepper .. which is at (MainGearPitchDiameter + RotaryGearPitchDiameter)/2
 
-SCARA arm length
+At 150 teeth/15 teeth we're at 82.5.  Nope
+At 180 teeth/18 we're at 99. Maybe - center of shaft is between motor and central platform
+At 200 teeth/20 we're at 110. Looking better.
+At 220 teeth/22 we're at 121
+At 240 teeth/24 we're at 132
+
+So, looking at 200/20, we're in the region between the middle of the lazy susan at 82.5 (distance from origin).  I guess there is no easy way to make a eight lazy susan work ... I guess I am going to do a six inch version.
+
+
+SCARA_Arm_Length: 87
+
+## Six inch gear
+
+Numbers for this one would be
+
+LazySusanOuterHole: 128
+LazySusanInnerHole: 101
+LazySusanOuter: 140
+LazySusanInner: 88.5
+LazySusanMid: 114
+
+This puts the edge of central platform support at 57 mm, and the elbow 30 mm beyond that.  So we want at least 30 mm before the motor shaft.  So we want  (MainGearPitchDiameter + RotaryGearPitchDiameter)/2  to be 30 mm greater than the arm length of 87, so 117.  240/24 geas seem like a good option.  I'll start the design with these numbers.
+
+MainGearPitchDiameter: 240
+RotaryPitchDiameter: 24
+
+From shaft to central support 87-57= 30
+From shaft to rotary motor shaft 111-87=41. 
+
+This seems workable .. 6 inch lazy susan with 240/24 tooth
+
+Shaft diameter of 15 works with the bearings I have (21 OD, 15 ID)
+
+SCARA_Arm_Length: 87
+
+New components - 40 cm SCARA robot
+
+I'll extrude a platform that can be joined to the 240 tooth gear later
+
 
 ![image](https://github.com/user-attachments/assets/8bca2507-025c-4213-a905-7a51a1a512fd)
 
+
+
+So, I need to take care of modlling the following:
+
+* Extrude platform
+* Rotary pointer (m3 screw dropped through the gear)
+* Outer arm with 15 mm shaft & adjustment for magnet holder, slot
+* Magnet holder cylinder m3 insert,  for 20 mm diameter magnet
+* Elbow pointer/end cap to fit over shaft and secure with cotter pin
+* Holder for bearings to fill space between elbow pointer and main gear
+* 2 40 tooth? gt2 gears. One to fit nema motor, and one to fit a starred patter on shaft.   This fits above gear ... hopefully gears can be tight enough around shaft.   Larger bearings and a collar?
+*Idler mechanism to take up slack I'll have with 400 mm belt (what I have on hand).  2 fixed and one that can slide along a slot.  Need to check size on skate bearings
+* Outer arm
+
+For fun I'll inset this into the platform
+
+
+Centering mechanism for platform? ... attachment points  This can just be pressure fit.
 
 
 
