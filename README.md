@@ -1,6 +1,11 @@
 # three-in-one-robot
 
-I'm mostly doing this as an exercise to improve my 3d modeling skils.  I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.   This one uses a 6 inch lazy susan, 23 mm pancake stepper motors and the motor shafts cut down as much as possible.
+This is a work in progress, and these are my notes.
+
+I'm mostly doing this at least partially as an exercise to improve my 3d modeling skills. 
+
+
+I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.   This one uses a 6 inch lazy susan, 23 mm pancake stepper motors and the motor shafts cut down as much as possible.
 
 ![Screenshot 2025-03-19 143729](https://github.com/user-attachments/assets/45b9fb46-51ea-482a-8214-f8abd84f57f3)
 
@@ -8,7 +13,7 @@ The second one is more traditional with an 8 in lazy susan, 38 mm motors.
 
 ![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/6667d86c-5a57-4203-88a5-3525c1b6c738)
 
-I'll use the first to build a Dune Weaver Ombonod style robot with the radial arm the same length/gear modulus,  gear ratio of the rotational.    It should be fully software compatible.  I haven't yet down the rotational/radial sensors in the basic platform, but the Ombonod doesn't use these anyway.  I used a 6 inch lazy susan for the "Polar Sandtable" robot and was able to fit a Hall effect radial/optical rotational sensor in, so I'll pull that design in.   
+I'll use the first to build a Dune Weaver https://github.com/tuanchris/dune-weaver Ombonod style robot with the radial arm the same length/gear modulus,  gear ratio of the rotational.    It should be fully software compatible.  I haven't yet designed the rotational/radial sensors holders in the basic platform, but the Ombonod Dune Weaver. doesn't use these anyway.  I used a 6 inch lazy susan for the "Polar Sandtable" robot and was able to fit a Hall effect radial/optical rotational sensor in, so I'll pull that design in.   
 
 I have several projects that require a rotational platform.   The basic design is to use an aluminum lazy susan and a large main gear with an exterior rotary motor.   Lazy susans make
 a very inexpensive and stable platform.   The design will use 3d printed gears, so the only cost in the basic platform is the stepper motor, lazy susan and filament.  By paramaterizing 
@@ -24,7 +29,7 @@ The center gear could be used to drive a SCARA arm, a radial arm, and the third 
 
  ## V.1 Update
 
- It's pretty clear that updating gears is going to be a major stumbling block.   Since the gear generation tool is a pluging, there is no way to truely parameterize gear generation - I can see that traditionally gears were something you got from a catalog, but in an age of 3d printing it would be nice to have this truely integrated.
+ It's pretty clear that updating gears is going to be a stumbling block to be fully parameterized.   Since the gear generation tool is a pluging, there is no way to truely parameterize gear generation - I can see that traditionally gears were something you got from a catalog, but in an age of 3d printing it would be nice to have this truely integrated.
 
  (I can't really complain when I'm using a pretty nifty tool provided to me for free)
  
@@ -49,25 +54,19 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
 
 6. The bottom plate needs to serve as adapter between original mounting plate and whatever is used in the current design.  
 
-Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate (barely).    I still need to add the mounts for the optical/hall effect sensors.  The rotary sensor is common to both. In the base I've added the 15 tooth gear (allows the slot on the radial arm to be narrower).
+Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate (barely).     The rotary sensor is common to both. In the base I've added the 15 tooth gear (allows the slot on the radial arm to be narrower).
 
 
-
-
-
-
-##
+## History
 One of the reasons I wanted to do this one is that I built the robot from (Matt G )[https://alwaystinkering.com/category/sand-table/].   At the time, I 
 lacked the 3d modeling skills and the 3d printing skills to do a satisfying job, so I've been meaning revist this at come up with an improved design.   There were a couple of 
 issues I wanted to overcome.   The arm had too much play in and tended to drop.  It was also difficult to get everything adjusted correctly for the belts.   I'm intending to address these issues with the design below:
-
 
 The inner arm is made of up two 5 mm carbon fiber rods (about $9 for a pack of 5 on [Amazon](https://www.amazon.com/MECCANIXITY-Carbon-Fiber-300mm-Quadcopter/dp/B0CTTBSBNN/ref=sr_1_3?crid=23AJ794M031PM&dib=eyJ2IjoiMSJ9.MJMeH6QCTyoHL-ZEP7HK383_D5m7PvBB6umXPj412T82ivodgDwwibtP-o99J82awkXbBVNg6YtYdp0IcY5KSYMnMyv4WD5BTGDfNwqVEZvL3AO2EfehHA3-aUxMxHUbDV3WPDU3brXmNrpYyupg3zEqk20EA3a1WjvzvC-7nav0SX84Rhcg9OvzAG8pIeWm___IUwbI6N8TGsc19B4hIliI1wySKjRjpnN3WFXdPponAJsvwQeWk-QBfgMZVEMf01K42pAfz6SMQs4IGNKMBMFHWvP3rgJJXHq7G8xhCwtAwYNUt0BJbvU_Rj2J92nrpFCMhCWAHMo44yrs9E4OWFgAjeFTK5GGM2dhwCLgc0U.uLn67MjOrLTEv2xcwRVmrgF7J6BWl-cumq0-pPBESwc&dib_tag=se&keywords=5%2Bmm%2Bcarbon%2Bfiber%2Brod&qid=1742215634&s=industrial&sprefix=5%2Bmm%2Bcarbon%2Bfiber%2Brod%2Cindustrial%2C140&sr=1-3&th=1)   I'll add the attachments to the main gear, a end cap to hold the rods together and an adjustable/sliding mechanism to hold the elbow gear and keep the belt snug.  Pretty simple!
 
 The 5 mm carbon fiber rods are incredibly strong.   The trick to getting the sandtable robots working well seems to keep the arm as stiff as possible and provide a cylinder for the magnets that they can freely float up and down (while keeping the cylinder as perpendicular to the table surface as possible.  I think I can do all that with this design.
 
-I'll put a 
-length adjustment for the position of the magnet on the outer arm so that the magnet can be in the exact center after homing (I'll include the rotational homing as part of the 
+I'll put a length adjustment for the position of the magnet on the outer arm so that the magnet can be in the exact center after homing (I'll include the rotational homing as part of the 
 base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty easy to come up with the SCARA design.  Homing the radial/SCARA depends on the design of the robot and needs to be in the derived model (homing of the SCARA is done by gettng the rotational to a known postition and then rotating the outer arm until it sees an optical/hall effect sensor).    A radial design can be done in a very similar manner ... it usual involves getting the rotation to a known spot first.
 
 ## 
