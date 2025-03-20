@@ -9,7 +9,7 @@ I would like to get better at constraints and parameterizing my designs (even if
 
 ![Screenshot 2025-03-19 143729](https://github.com/user-attachments/assets/45b9fb46-51ea-482a-8214-f8abd84f57f3)
 
-The second one is more traditional with an 8 in lazy susan, 38 mm motors.
+The second one is more traditional with an 8 in lazy susan, 38 mm motors.  To get the build to the basic platform, you'll need  two stepper motors of the same size and either a six inch or eight inch lazy susan (8 inch is best unless it's too large for either the space or your printer).  There is a base which can be mounted on threaded rods/offsets for leveling/tramming, a holder for the center part of the lazy susan and the 3d printed gears.  There will be a rotation sensor mount, a radial sensor mount and one for the SCARA outer arm, 16 short M4 bolts and 16  M4 heated inserts.  There will be a couple of additional M3 screws and associated heat inserts (a USB C soldering iron + heat inserts is ne of my favorite 3d printing gotos.  I can be done with assembly where normally I would be looking for the nut/washer I dropped on the floor)  Minimal parts to print, so it's a very easy build.
 
 ![Screenshot 2025-03-18 105408](https://github.com/user-attachments/assets/6667d86c-5a57-4203-88a5-3525c1b6c738)
 
@@ -68,6 +68,10 @@ The 5 mm carbon fiber rods are incredibly strong.   The trick to getting the san
 
 I'll put a length adjustment for the position of the magnet on the outer arm so that the magnet can be in the exact center after homing (I'll include the rotational homing as part of the 
 base platform - it's basically an M3 screw dropped through a hole in the main gear).   The height shown is for the smallest NEMA 17 motor I saw on Amazon.  So starting from the base platform, it's pretty easy to come up with the SCARA design.  Homing the radial/SCARA depends on the design of the robot and needs to be in the derived model (homing of the SCARA is done by gettng the rotational to a known postition and then rotating the outer arm until it sees an optical/hall effect sensor).    A radial design can be done in a very similar manner ... it usual involves getting the rotation to a known spot first.
+
+Rough mockup of design ... inner arm consists of two 8 mm carbon fiber rods.  The outer arm platform can slide along to get the correct length (I want to add a swing arm idler pully to take out the rest of the slack and add a pretty standard outer arm.  The two issues I had with belts on the SCARA design was that it can be difficult to source the exact length you want, so getting rid of an extra 10-40 mm or so would be useful.  Second issue is getting the tension correct to minize backlash, but not bind anything up.  
+
+![Screenshot 2025-03-17 030613](https://github.com/user-attachments/assets/2a320b4a-673c-4ce3-82dd-5c566bb7a17c)
 
 ## 
 The second design (actually the first I'm planning) is a radial arm Polar robot.    In this case the central gear drives a radial arm.  I wanted to get the base platform in good shape first.   Once that's done the radial design - very similar to the [Dune Weaver project] (https://github.com/tuanchris/dune-weaver) is just a matter of attaching the radial arm.   I would use the Dune Weaver software ... which is pretty great to control the robots.   I think Tuan has come up with the right approach by using off-the-shelf hardware and software for the stepper control (Fluidnc running on the mksdlc32) and then using a Raspberry Pi Zero 2w with code written in python for the user interface.  Both Tuan/Dune Weaver and Fluidnc deserver your (and my!) support.
