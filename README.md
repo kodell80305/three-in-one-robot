@@ -83,4 +83,50 @@ There's a fourth design I've been thinking about.  Both the SCARA and radial arm
 ##
 ![image](https://github.com/user-attachments/assets/722deff9-4102-434f-8175-697cf08c401c)
 
+### Design One
+
+This is an 8 inch SCARA with the two trees pancake stepper for a 40 cm Ombonad table.  I have no idea if this motor is power.  Configuration of this will be modified Dune Weaver software to work with SCARA Fluidnc.    Unlike the real Ombonad, SCARA requires homing.
+
+The eight inch lazy susan is (currently) $16.99 while the six in is $14.99.   I'll probably only every do eight inch designs.
+
+Parameter Settings:
+
+Gear goes from the 150 tooth to 240 tooth version.  Rotary gear at 24 teeth to keep gear ratio unchanged
+MainGearPitchDiameter: 240
+RotaryPitchDiameter:
+
+LazySusanOuterHole: 189
+LazySusanInnerHole: 157
+LazySusanOuter: 200
+LazySusanInner: 145
+LazySusanMid: 172
+
+MotorLength: 24
+ShaftLength: 22.6
+
+Produces one warning for Hole3 
+
+<b>4 Reference Failures</b><br/>The face reference is lost and this feature is using cached geometry.<br/>Edit this feature and select new face references.
+
+Height 54.60 (this is distance to main gear + other gears), i.e. 6 mm above main gear
+
+Before I start printing I need:
+
+1. Optical mount attachment points
+2. Add additional attachment points on base (e.g. for centering within Ombonad space
+
+My Ombonad table has a inner radius of 396 mm, magnet, arm takes at least an additonal 20 m, so we are down to 380.  I think 350 should be okay.  I'll use 350 which means an arm length of 87
+
+SCARA arm length
+
+![image](https://github.com/user-attachments/assets/8bca2507-025c-4213-a905-7a51a1a512fd)
+
+
+
+
+
+
+
+
+
 
