@@ -161,7 +161,7 @@ I'll extrude a platform that can be joined to the 240 tooth gear later
 
 
 
-So, I need to take care of modlling the following:
+So, I need to take care of mod3lling the following:
 
 * Extrude platform
 * Rotary pointer (m3 screw dropped through the gear)
@@ -173,9 +173,9 @@ So, I need to take care of modlling the following:
 *Idler mechanism to take up slack I'll have with 400 mm belt (what I have on hand).  2 fixed and one that can slide along a slot.  Need to check size on skate bearings
 * Outer arm
 
-For fun I'll inset this into the platform
+For fun I'll inset the belt into the platform by 4 mm ... I need to temporarilly set main gear thickness to far (effective height of main gear).
 
-
+Printing base - 2 hours/20 minutes, blue PETG, 87 grams of filament
 Centering mechanism for platform? ... attachment points  This can just be pressure fit.
 
 
