@@ -56,6 +56,28 @@ These are 38 mm long 42 Ncm motors.  I'll complete more of the platform support.
 
 Including the base, Current version is shown at the top - the eight inch version will fit on a 256 x 256 build plate (barely).     The rotary sensor is common to both. In the base I've added the 15 tooth gear (allows the slot on the radial arm to be narrower).
 
+## Using Base Platform
+
+I still need to do a few tweeks, but I'm going to do an experiment to create a SCARA robot based on a 6 in lazy suzan, a 24 tooth rotary gear and a 240 tooth main gear. 
+
+First create new top level component (I'm not sure what an assembly is) and copy and paste the base platform  This should create a new independant copy of the parameters.
+Create a new component for e.g. the main gear.
+
+
+The main gear will need something to mount the arm to (i.e.) a guide attached from underneath, posts for sleeve bearings, a slot for idle sleeve bearing to adjust, holes for optical.  I don't think it needs anything else
+
+1. Hole for outer Arm ... OD of bearins used and heat inert holes for guild
+2. optical pointer > lazy susan mid + 13 additonal holes for adjustments
+3. 
+4. bearing sleeve posts
+5. Mounting holes to lazy susan
+
+There's one issue that I still need to deal with ... the slot for the idle adjustment was directly above the lazy susan ... I'll just need to fit something holding a sleave bearing to take up the slack, so it won't be adjustable.  Everything else seems good.  I need to do the outer arm, a guide/mounting for the arm and the cutouts for the gt2 gear.   I maded the post for the idle bearing sleeve a little short ...  I may neet to print an extension and then the bearing.  It should be as tall as the gt2 gear, not as tall as the main gear
+
+
+
+
+
 
 ## History
 One of the reasons I wanted to do this one is that I built the robot from (Matt G )[https://alwaystinkering.com/category/sand-table/].   At the time, I 
