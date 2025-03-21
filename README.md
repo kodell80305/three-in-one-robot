@@ -27,6 +27,15 @@ shouldn't be a problem for the model, but quickly gets out of the range of my pr
  
 The center gear could be used to drive a SCARA arm, a radial arm, and the third project I have in mind is a string art project
 
+## First robot design
+
+Off and printing ...
+
+![Screenshot 2025-03-21 111509](https://github.com/user-attachments/assets/59bb6583-f6e7-476c-8c66-85d7a795f2b8)
+
+40 cm SCARA on eight inch lazy susan.  I think I've made about an order of magnutide fewer errors in this process.   I started one print but caught the error when only the first few layers were printed.   
+
+
  ## V.1 Update
 
  It's pretty clear that updating gears is going to be a stumbling block to be fully parameterized.   Since the gear generation tool is a pluging, there is no way to truely parameterize gear generation - I can see that traditionally gears were something you got from a catalog, but in an age of 3d printing it would be nice to have this truely integrated.
