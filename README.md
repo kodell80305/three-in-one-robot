@@ -156,12 +156,11 @@ New components - 40 cm SCARA robot
 
 I'll extrude a platform that can be joined to the 240 tooth gear later
 
-
 ![image](https://github.com/user-attachments/assets/8bca2507-025c-4213-a905-7a51a1a512fd)
 
 
 
-So, I need to take care of mod3lling the following:
+So, I need to take care of modelling the following:
 
 * Extrude platform
 * Rotary pointer (m3 screw dropped through the gear)
@@ -177,6 +176,8 @@ For fun I'll inset the belt into the platform by 4 mm ... I need to temporarilly
 
 Printing base - 2 hours/20 minutes, blue PETG, 87 grams of filament
 Centering mechanism for platform? ... attachment points  This can just be pressure fit.
+
+Printing Central support 1 hr/12 minutes, white PETG 30 grams of filament.  The heat inserts are quite large .. may want to make feet of support wider
 
 
 
