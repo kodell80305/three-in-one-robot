@@ -4,7 +4,6 @@ This is a work in progress, and these are my notes.
 
 I'm mostly doing this at least partially as an exercise to improve my 3d modeling skills. 
 
-
 I would like to get better at constraints and parameterizing my designs (even if you don't change parameters, it seems helpful in keeping everything consistent, it forcing you to think about what the important measurements).    Modifying parameters seems to be a good way to realize that your designs are not correctly or properly constrained.   I also need to get better at organizing my designs.  Below is the current version of the basic platform.   This one uses a 6 inch lazy susan, 23 mm pancake stepper motors and the motor shafts cut down as much as possible.
 
 ![Screenshot 2025-03-19 143729](https://github.com/user-attachments/assets/45b9fb46-51ea-482a-8214-f8abd84f57f3)
@@ -72,17 +71,24 @@ I still need to do a few tweeks, but I'm going to do an experiment to create a S
 First create new top level component (I'm not sure what an assembly is) and copy and paste the base platform  This should create a new independant copy of the parameters.
 Create a new component for e.g. the main gear.
 
-
 The main gear will need something to mount the arm to (i.e.) a guide attached from underneath, posts for sleeve bearings, a slot for idle sleeve bearing to adjust, holes for optical.  I don't think it needs anything else
 
-1. Hole for outer Arm ... OD of bearins used and heat inert holes for guild
-2. optical pointer > lazy susan mid + 13 additonal holes for adjustments
-3. 
-4. bearing sleeve posts
-5. Mounting holes to lazy susan
+I've run through the build once and a few adjustments should be made:
 
-There's one issue that I still need to deal with ... the slot for the idle adjustment was directly above the lazy susan ... I'll just need to fit something holding a sleave bearing to take up the slack, so it won't be adjustable.  Everything else seems good.  I need to do the outer arm, a guide/mounting for the arm and the cutouts for the gt2 gear.   I maded the post for the idle bearing sleeve a little short ...  I may neet to print an extension and then the bearing.  It should be as tall as the gt2 gear, not as tall as the main gear
+1. Base platform should have independent parameters for radial/rotary gear - SCARA uses a GT2 gear
+2. Base platform needs clamps for the NEMA motors.  Really shouldn't set the base thickness to less than 3 mm so that the central support is attached.  Using base thickness at all is probably not a good idea to adjust the height ... should add a motor offset
+3. Some derived parameters should be added ... I use motor length + shaft length often
+4. I'm a little confused by the copy paste and how independant the copy is ... I need to understand this better.
 
+Plus some things specific to this model.
+
+1. Check overall height ... want to shoot for height at central arm of 60 mm.
+2. Optical pointer needs to pass above motor.
+3. Need to think about the actual homing algorithm used by fluidnc ... if you home the rotational, e.g. it will hit the limit switch and back off by a (configurable) amount, but it needs to not have the limit switch trigged at that point.  So you need to position your rotational and configure so that the (in this case) the elbow motor will in turn trigger it's limit switch, back off by the expected amount and wind up where you want it.   Some ability to adjust both of these is necessary.
+
+I'll use the hole in the endcap to put a nail through for optical pointer - raises it enougth to clear motor
+
+Scara arm length is 87 mm, GT2 40 tooth pulley should have circumference of 80 mm (2 mm/tooth), so belt length should be around 2*87+80 = 254
 
 
 
