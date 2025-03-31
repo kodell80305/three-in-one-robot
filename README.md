@@ -32,6 +32,60 @@ Status:
 
 The Ombonad robot is complete - but I just realized that once again I was making life way too hard so I have one change I want to make.  The plan is to get this working, go back and tweak the base platform to fix some weaknesses and then start on what is essentially a copy of the Dune Weaver Pro to fit my table.
 
+Critical constraints/vertical
+
+Rotary gear needs to mesh with the main gear.
+
+Height of rotary = Top of main gear - clearance (it should be at least 1 mm below top)
+                 = base thickness + Motor length
+
+*** So MainTop = BaseHeight + NemaML + Clearance 
+
+Second would be that the Lazy Susan support + Lazy SusanHeight + MainGearHeight = MainTop
+So MainTop = LZSupportHeight + LZHeight + MainGearHeight,
+
+***Computed: LZSupportHeight = BaseHeight + NemaML + Clearance - LZHeight - MainGearHeight
+
+Lazy Susan support starts at BaseHeight & is (BaseHeight + NemaML + Clearance - LZHeight - MainGearHeight)
+
+where BaseHeight just for additional support, I'm using 3 mm here.
+NEMA motor length depends on motors chosen, I'm using some pancake steppers for this.
+Clearance is 1 mm
+LZ Height is the purchased Lazy Susan - 8.5 mm
+MainGear Height is chosen to be 8 mm (it won't effect the overall robot height - actually the thicker the main gear the lower the robot in this particular case)
+
+1. Change bearing size to 21x15
+2. Get rid of m3 heat inserts - use generic m3hole size of 2.7 mm for "self tapping" holes
+
+3. Arm guide = Top is at MainTop - MainThickness, bottom at MainTop - MainThickness - ArmGuideHeight
+
+
+Arm redesign
+
+Shaft is inner diameter of bearing
+Need a circle size of gt2 40 tooth pully
+
+Assume bottom of rotary is zero:
+
+ML - RotaryHeight = MainBottomHeight
+
+Constraint 1: Rotary Motor should mesh with main gear ... bottom of rotary should line up with bottom of main gear (main gear is taller, so provides clearance)
+
+MainBottom = ML - RotaryHeight
+MainBottom = SupportHeight + LazySusanHeight
+
+ML - depends on what motor is picked
+LazySusanHeight - depends on manufacturer of lazy susan
+
+So SupportHeight = ML - RotaryHeight - LazySusanHeight
+
+Radial motor:
+
+GTHeight should include shim for clearance, so call in 10 mm
+End of motor - GT2 Height = MainTopEffective  <- same level as gear driving outer arm ... we don't need clearance, but we do on outer arm 
+
+
+
 
 
 
