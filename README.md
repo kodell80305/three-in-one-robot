@@ -1,6 +1,14 @@
 # three-in-one-robot
 
+I've completed two of the three robots I had planned for this project.  The 40 cm SCARA version:
+
 ![image](https://github.com/user-attachments/assets/a1185e0c-d6f3-4ce7-bffb-e886d29a4895)
+
+and what is pretty much a version of the Dune Weaver Robot:
+
+![Screenshot 2025-04-20 143449](https://github.com/user-attachments/assets/fedf754d-00b7-4214-9fc5-e9ca6a27dd13)
+
+I need to work on the software for the SCARA robot ... I'm planning on doing a version of the Dune Weaver software that will support this.  I also need to get the software for the DW radial arm version done.   Both of the robots need a little more work on the limit switches ... in the 40 cm SCARA case, I just need to add the optical detector for the rotary & elbow motor.   In the radial arm case, the rotary is pretty easy, but the hall effect limit switch I need to use for the radial arm is very tight.
 
 The goal in this project is to develop a fully parameterized rotational platform that can be used for a few projects I'm doing.
 
